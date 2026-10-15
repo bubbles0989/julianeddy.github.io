@@ -543,6 +543,23 @@ footer a {
 	min-width: 0;
 }
 
+.project-card-link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.project-card-link:hover h2 {
+	text-decoration: underline;
+	text-decoration-color: var(--color-orange);
+}
+
+.project-card-link:focus-visible {
+	border-radius: 2px;
+	outline: 2px solid var(--color-orange);
+	outline-offset: 5px;
+}
+
 .project-image-placeholder {
 	display: grid;
 	width: 100%;
@@ -583,6 +600,15 @@ footer a {
 .project-card p span {
 	padding: 0 5px;
 	color: var(--color-orange);
+}
+
+.project-link-label {
+	display: inline-block;
+	margin-top: 10px;
+	color: var(--color-orange);
+	font-family: var(--font-sans);
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .work-heading {
